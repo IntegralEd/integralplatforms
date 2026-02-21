@@ -3,3 +3,45 @@
  * The base theme is provided by vendor/integralthemes/theme/theme.css
  * Override CSS variables here: :root { --primary: #custom-color; }
  */
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+/* h3s on this site are prose sub-headings, not decorative — keep dark */
+h3 {
+  color: var(--text-primary);
+}
+
+/* Restore section breathing room — this page is content-heavy */
+.section {
+  padding: var(--spacing-3xl) 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+}
+
+/* ============================================
+   CARD LAYOUT FIXES
+   ============================================ */
+
+/* base.css sets h4 { text-align: left } which overrides the
+   text-align: center inherited from .process-card. Restore centering. */
+.process-card h4,
+.process-card .card-title {
+  text-align: center;
+}
+
+.process-outcome h4 {
+  text-align: center;
+}
+
+/* Remove 70ch paragraph clipping inside cards and content blocks */
+.process-card .card-description,
+.service-content p,
+.about-content p {
+  max-width: none;
+}
