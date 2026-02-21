@@ -45,3 +45,39 @@ h3 {
 .about-content p {
   max-width: none;
 }
+
+/* ============================================
+   PHOTO BACKGROUND SECTION
+   ============================================ */
+
+.photo-background-section {
+  /* Swap in your background image when ready: */
+  /* background-image: url('assets/your-background.png'); */
+  background-color: var(--primary-dark);
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding: var(--spacing-xl) 0;
+  position: relative;
+}
+
+.photo-background-section .content {
+  max-width: 600px;
+}
+
+.photo-background-section h2,
+.photo-background-section p {
+  color: white;
+  text-align: left;
+  max-width: none;
+}
+
+.photo-background-section h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .photo-background-section .content {
+    max-width: 100%;
+  }
+}
