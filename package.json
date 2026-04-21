@@ -3,6 +3,15 @@
   "version": "1.0.0",
   "description": "IntegralEd Platform - Modern educational platform",
   "siteSlug": "integralplatforms",
+  "footer": {
+    "siteName": "Platforms &amp; LMS",
+    "pageLinks": [
+      { "href": "#home",    "label": "Home" },
+      { "href": "#services","label": "Process" },
+      { "href": "#approach","label": "Approach" },
+      { "href": "#contact", "label": "Contact" }
+    ]
+  },
   "scripts": {
     "build": "node build.js",
     "dev": "python3 -m http.server 8000",
